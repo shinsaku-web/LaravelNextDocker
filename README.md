@@ -9,7 +9,7 @@ docker-compose up -d
 ## Next.js インストール
 
 ```
-docker-compose exec frontend bash
+docker-compose exec frontend sh
 npx create-next-app@latest --typescript .
 
 # 開発用サーバー起動
@@ -19,7 +19,7 @@ docker-compose exec frontend yarn dev
 ## Laravel インストール
 
 ```
-docker-compose exec backend bash
+docker-compose exec backend sh
 composer create-project laravel/laravel .
 ```
 
