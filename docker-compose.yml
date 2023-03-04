@@ -7,24 +7,25 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - ./frontend:/app
+      - ./frontend/app:/app
+    stdin_open: true
     tty: true
 
   backend:
     container_name: backend
     build: ./backend
     volumes:
-      - ./backend:/app
+      - ./backend/app:/app
+    stdin_open: true
     tty: true
 
   nginx:
     container_name: nginx
     build: ./nginx
     volumes:
-      - ./nginx:/app
+      - ./nginx/app:/app
     ports:
       - 8080:80
-    tty: true
 
   database:
     image: mysql:8.0
@@ -37,7 +38,7 @@ services:
       TZ: "Asia/Tokyo"
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     volumes:
-      - ./db/data:/var/lib/mysql
+      - db:/var/lib/mysql
     ports:
       - 3306:3306
 
