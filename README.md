@@ -32,6 +32,8 @@ docker-compose exec backend sh
 composer create-project laravel/laravel .
 ```
 
+インストール後、mysql の環境変数をルートディレクトリの.env に指定した内容と合わせる。
+
 ## コンテナ停止
 
 ```
