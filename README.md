@@ -11,9 +11,7 @@ docker-compose up -d
 ```
 docker-compose exec frontend sh
 npx create-next-app@latest --typescript .
-
-# 開発用サーバー起動
-docker-compose exec frontend yarn dev
+npm run dev
 ```
 
 ## Laravel インストール
