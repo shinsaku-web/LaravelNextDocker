@@ -3,7 +3,7 @@
 ## Next.js インストール
 
 ```
-docker-compose exec frontend npx create-next-app@latest --typescript
+docker-compose exec frontend npx create-next-app@latest --typescript .
 
 # 開発用サーバー起動
 docker-compose exec frontend yarn dev
