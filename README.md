@@ -1,5 +1,12 @@
 # Laravel + Nextjs + Docker 環境
 
+## 動作環境
+
+- php8.1
+- Laravel10
+- Node18
+- next13
+
 ## コンテナ起動
 
 ```
