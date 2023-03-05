@@ -33,6 +33,7 @@ composer create-project laravel/laravel .
 ```
 
 インストール後、mysql の環境変数をルートディレクトリの.env に指定した内容と合わせる。
+DB_HOST、DB_DATABASE、DB_USERNAME、DB_PASSWORD を変更。
 
 ## コンテナ停止
 
