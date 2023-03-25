@@ -19,7 +19,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/', function () {
-    $data = DB::select('SELECT * from sample_table');
+Route::get('/hello', function () {
+    // $data = DB::select('SELECT * from sample_table');
+    $data = ["hello" => "hello"];
     return response()->json($data);
 });
