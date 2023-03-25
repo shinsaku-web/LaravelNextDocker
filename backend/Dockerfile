@@ -3,9 +3,7 @@ FROM php:8.1-fpm-alpine
 # 必要なパッケージのインストール
 RUN apk --update --no-cache add \
     bash \
-    git \
     oniguruma-dev \
-    postgresql-dev \
     zlib-dev \
     libpng-dev \
     libjpeg-turbo-dev \
